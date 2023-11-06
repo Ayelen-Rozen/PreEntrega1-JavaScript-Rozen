@@ -29,8 +29,8 @@ return (resultado)
 while(continuarJugando){
     jugador = prompt("Elija: 1 - PIEDRA, 2 - PAPEL, 3 - TIJERA")
     pc = aleatoria();
-    alert('Elegiste:' + eleccion(jugador))
-    alert ('PC eligió:' + eleccion(pc))
+    alert("Elegiste: "+ eleccion(jugador))
+    alert ("PC eligió: " + eleccion(pc))
     
     
     if (jugador == pc) {
@@ -45,8 +45,8 @@ while(continuarJugando){
         alert("PERDISTE")
     }
 
-    let respuesta = prompt("¿Quieres jugar de nuevo? (s/n)");
-    if (respuesta.toLowerCase() !== "s") {
+    let respuesta = prompt("¿Quieres jugar de nuevo? (si o no)");
+    if (respuesta.toLowerCase() !== "si") {
         continuarJugando = false;
     }
 
