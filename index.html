@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Piedra - Papel o Tijera</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./style/estilos.css">
 </head>
+
 <body>
     <header class="header">
-        <h1 class="title">¿Piedra, Papel o Tijera?</h1>
+        <h1 class="header_title">¿Piedra, Papel o Tijera?</h1>
     </header>
 
-    <main class="menu">
-        <div>
-            <img class="piedra" src="./style/img/piedra.webp" alt="manos haciendo de piedra">
-        </div>
-        <div>
-            <img class="papel" src="./style/img/papel.webp" alt="manos haciendo de papel">
-        </div>
-        <div>
-            <img class="tijera" src="./style/img/tijera.webp" alt="manos haciendo de tijera">
-        </div> 
-    </main>
+    <div class="main_container">
 
+        <div class="vs_container">
+            <!-- jugador 1 -->
+            <div class="player">
+                <img id="player1" src="./style/img/persona.svg"
+                    alt="imagen de un cerebro que representa al jugador humano">
+                <p>Player 1</p>
+                <p id="points_player1">0</p>
+            </div>
+
+            <div class="vs">
+                <h3 id="result">VS</h3>
+            </div>
+
+            <!-- jugador 2 -->
+            <div class="player">
+                <img id="player2" src="./style/img/bot.svg" alt="imagen de un bot que representa al jugador maquina">
+                <p>Player 2</p>
+                <p id="points_player2">0</p>
+            </div>
+        </div>
+        
+            <!-- Contendor  de opciones para el juego  -->
+            <div class="game_container">
+                <div class="game_options">
+                    <button id="piedra" class="option_piedra">
+                        <img src="./style/img/piedra.svg" alt="imagen de una mano haciendo la forma de piedra">
+                    </button>
+                    <button id="papel" class="option_papel">
+                        <img src="./style/img/papel.svg" alt="imagen de una mano haciendo la forma de papel">
+                    </button>
+                    <button id="tijera" class="option_tijera">
+                        <img src="./style/img/tijera.svg" alt="imagen de una mano haciendo la forma de tijera">
+                    </button>
+                </div>
+
+                <div class="rules">
+                    <p>Piedra gana contra Tijera y pierde contra Papel</p>
+                    <p>Papel gana contra Piedra y pierde contra Tijera</p>
+                    <p>Tijera gana contra Papel y pierde contra Piedra</p>
+
+                </div>
+            </div>
+
+            <!-- Contenedor botones de inicio y reset del juego -->
+            <div class="start_game">
+                <button id="start">
+                    <img src="./style/img/play.svg" alt="boton start">
+                </button>
+
+                <button id="reset">
+                    <img src="./style/img/reset.svg" alt="boton reset">
+                </button>
+
+            </div>
+
+
+    
+    
+
+    <!-- JS -->
     <script src="./JS/app.js"></script>
+
 </body>
+
 </html>

@@ -1,41 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Biryani:wght@600&family=Borel&family=Bungee&family=Fira+Code&family=Rock+Salt&display=swap");
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(36, 33, 33);
-}
-
-.header {
-  background-color: red;
-  height: 200px;
+  background-color: #F6FA70;
+  font-family: "Biryani", sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  color: #666;
 }
 
-.title {
-  font-family: "Borel", cursive;
-  color: white;
-  font-size: 55px;
+.header .header_title {
+  font-size: 32px;
+  margin: 40px 0px;
 }
 
-div img {
-  width: 180px;
-  height: 200px;
+.main_container {
+  display: flex;
+  flex-direction: column;
 }
-
-.menu {
-  padding: auto;
-  margin-top: 15px;
+.main_container .vs_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: #5e5b5b 10px solid;
+  padding: 50px 50px 30px 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+}
+.main_container .vs_container .player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_container .vs_container img {
+  height: 180px;
+  width: auto;
+}
+.main_container .vs_container .vs {
+  margin: 0px 50px;
+}
+.main_container .game_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_container .game_container .game_options {
+  display: flex;
+  flex-direction: row;
 }
 
+.game_options button,
+.start_game button {
+  margin: 0px 20px 40px 0px;
+  width: 80px;
+  height: 70px;
+  border-radius: 15px;
+  box-shadow: 2px 3px 5px #5e5b5b;
+  border: solid 3px #5e5b5b;
+  cursor: pointer;
+  background-color: aliceblue;
+  transition: all 0.5s;
+}
 
+.game_options button:hover,
+.start_game button:hover {
+  background-color: #F9B572;
+}
+
+.game_options button img,
+.start_game button img {
+  width: auto;
+  height: 50px;
+}
+
+.rules {
+  border: solid 10px #5e5b5b;
+  border-radius: 25px;
+  padding: 20px 110px;
+  background-color: aliceblue;
+}
+
+.start_game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 /*# sourceMappingURL=estilos.css.map */
